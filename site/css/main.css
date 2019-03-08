@@ -8,7 +8,7 @@ body {
 }
 
 .img_box {
-    background-color: forestgreen;
+    background-color: slategray;
     width: 85%;
     height: 30%;
     position: fixed;
@@ -40,14 +40,12 @@ body {
     position: relative;
     left: 14%;
     top: 29%;
-    padding: 10px;
     display: grid;
     /* column-width: auto;
     column-count: 4; */
     grid-template-columns: 1fr 1fr 1fr 1fr;
     /* grid-template-rows: auto; */
     column-gap: 20px;
-    height: 1000px;
     margin: 0;
 }
 
@@ -57,10 +55,63 @@ body {
     width: 200px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
 
-@media screen and (max-width: 600px) {
+.product_info{
+    background-color: skyblue;
+    width: auto;
+    height: 60px;
+    position: relative;
+    top: 200px;
+    text-align: center;
+}
+
+.cart{
+    position: fixed;
+    right: 20%;
+}
+
+.info{
+    position: fixed;
+    right: 30%;
+}
+
+.search{
+    position: fixed;
+    right: 10%;
+}
+
+.name{
+    position: absolute;
+    right: 15%;
+    bottom: 10%;
+    font-size: 2.5rem;
+}
+
+.hamburg_menu{
+    visibility: hidden;
+}
+
+@media screen and (min-width: 1400px) { 
+    .product_area{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1200px) { 
+    .product_area{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) { 
+    .img_box{
+        height: 20%;
+        width: 100%;
+        left: 0;
+    }
     .menu{
         left: -50%;
         width: 50%;
@@ -69,11 +120,65 @@ body {
     .product_area{
         width: 100% !important;
         left: 0px;
+        top: 20%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .menu{
+        left: -50%;
+        width: 50%;
+    }
+
+    .product_area{
+        width: 100% !important;
+        left: 0px;
+        top: 10%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .product_box{
+        height: 150px;
+        width: 150px;
+        margin-bottom: 40px;
+    }
+
+    .product_info{
+        height: 45px;
+        top: 150px;
     }
 
     .img_box{
         left: 0;
-        width: 100%
+        width: 100%;
+        height: 10%;
     }
 
+    .name{
+        visibility: hidden;
+    }
+
+    .hamburg_menu{
+        visibility: visible;
+    }
+
+}
+
+@media screen and (max-width: 550px) { 
+    .product_area{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product_box{
+        height: 120px;
+        width: 120px;
+        margin-bottom: 40px;
+    }
+
+    .product_info{
+        height: 36px;
+        top: 120px;
+    }
 }
