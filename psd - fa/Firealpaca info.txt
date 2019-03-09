@@ -1,0 +1,4 @@
+Firealpaca is a drawing program which I prefer to use when making artwork.
+
+It's free to download, but in case you're not interested, the images are 
+available in the "misc" tab as png:s and are updated as I go along.
