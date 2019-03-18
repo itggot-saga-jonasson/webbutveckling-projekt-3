@@ -1,3 +1,25 @@
+@keyframes menu {
+    100% {height: 150px; top: 110px;}
+}
+
+@keyframes anti_menu {
+    0% {height: 150px; top: 110px;}
+    100% {height: 60px; top: 200px;}
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeout {
+    0% {opacity: 1; visibility: visible;}
+    60% {opacity: 0; visibility: hidden;}
+}
+
+
+
 body {
     margin: 0;
     height: 100vh;
@@ -76,26 +98,92 @@ body {
     /* grid-template-rows: auto; */
     column-gap: 20px;
     margin: 0;
-    height: fit-content;
+    height: auto;
+    padding-bottom: 50px;
 }
 
 .product_box{
     background-color: rgb(60, 60, 66);
+    background-image: url("../img/asteroid.png");
+    background-size: 100%;
     height: 200px;
     width: 200px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+}
+
+/* .product_box:hover{
+    box-shadow: 0px 0px 45px 5px rgba(0,0,0,0.3);
+} */
+
+.product_info:hover{
+    animation: menu 0.5s forwards;
+}
+
+.product_info:hover ul{
+    animation: fadein 0.5s forwards;
+    visibility: visible;
+}
+
+.product_info:not(:hover){
+    animation: anti_menu 0.5s forwards;
+}
+
+.product_info:not(:hover) ul{
+    animation: fadeout 0.5s;
 }
 
 .product_info{
-    background-color: rgba(255, 255, 255, 0.61);
+    background-color: rgba(255, 255, 255, 0.8);
     width: auto;
     height: 60px;
     position: relative;
     top: 200px;
     text-align: center;
+    color: black;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+.product_info h1{
+    font-size: 1.5rem;
+}
+
+.product_info ul{
+    position: relative;
+    top: -10px;
+    text-align: left;
+    color: black;
+    visibility: hidden;
+}
+
+/* .product_info i{
+    position: relative;
+
+} */
+
+
+.button{
+    font-size: 1rem;
+    color: white;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    cursor: pointer;
+}
+
+.menu_box ul{
+    list-style-type: square;
+    /* margin: 0;
+    padding: 0; */
+    margin-left: 0;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+a:link{
+    text-decoration: none;
 }
 
 .cart{
@@ -108,7 +196,7 @@ body {
     right: 30%;
 }
 
-i{
+.img_stuff i{
     color: white;
     font-size: 2rem !important;
 }
