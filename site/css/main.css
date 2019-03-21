@@ -1,10 +1,11 @@
 @keyframes menu {
-    100% {height: 150px; top: 110px;}
+    0%{height: 60px; top: 0;}
+    100% {height: 150px; top: -90px;}
 }
 
 @keyframes anti_menu {
-    0% {height: 150px; top: 110px;}
-    100% {height: 60px; top: 200px;}
+    0% {height: 150px; top: -90px;}
+    100% {height: 60px; top: 0;}
 }
 
 @keyframes fadein {
@@ -104,8 +105,6 @@ body {
 
 .product_box{
     background-color: rgb(60, 60, 66);
-    background-image: url("../img/asteroid.png");
-    background-size: 100%;
     height: 200px;
     width: 200px;
     margin-left: auto;
@@ -114,9 +113,17 @@ body {
     margin-bottom: 40px;
 }
 
-/* .product_box:hover{
+.product_img{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-image: url("../img/asteroid.png");
+    background-size: 100%;
+}
+
+.product_box:hover{
     box-shadow: 0px 0px 45px 5px rgba(0,0,0,0.3);
-} */
+}
 
 .product_info:hover{
     animation: menu 0.5s forwards;
@@ -130,11 +137,11 @@ body {
 
 .product_info:not(:hover){
     animation: anti_menu 0.5s forwards;
-    pointer-events: none;
 }
 
 .product_info:not(:hover) ul{
     animation: fadeout 0.5s;
+    pointer-events: none;
 }
 
 .product_info{
@@ -142,14 +149,24 @@ body {
     width: auto;
     height: 60px;
     position: relative;
-    top: 200px;
+    top: -100px;
     text-align: center;
     color: black;
     font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 .product_info h1{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.product_info p{
+    margin: 3px;
+    font-size: 0.8rem;
+}
+
+p u{
+    font-size: 1rem !important;
 }
 
 .product_info ul{
@@ -160,10 +177,25 @@ body {
     visibility: hidden;
 }
 
-/* .product_info i{
-    position: relative;
+.price{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(200, 0, 0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-} */
+.product_info i{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 5px;
+    cursor: pointer;
+}
 
 
 .button{
@@ -203,8 +235,8 @@ a:link{
     font-size: 2rem !important;
 }
 
-i:hover{
-    text-shadow: 0px 0px 11px #ffffff;
+.img_stuff i:hover{
+    text-shadow: 0px 0px 10px #ffffff;
 }
 
 .search{
@@ -289,7 +321,11 @@ i:hover{
 
     .product_info{
         height: 45px;
-        top: 150px;
+        top: 150px;;
+    }
+
+    .price{
+        font-size: 1.5rem;
     }
 
     .img_box{
@@ -319,16 +355,16 @@ i:hover{
         height: 10%;
     }
 
-    .product_box{
+    /* .product_box{
         height: 120px;
-        width: 120px;
-        margin-bottom: 40px;
-    }
+        width: 120px; */
+        /* margin-bottom: 40px; */
+    /* }
 
     .product_info{
         height: 36px;
         top: 120px;
-    }
+    } */
 
     i{
         font-size: 1.5rem !important;
