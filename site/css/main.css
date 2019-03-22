@@ -75,6 +75,24 @@ body {
     z-index: 15;
 }
 
+.cover{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 90;
+    visibility: hidden;
+}
+
+.tadaa{
+    visibility: visible !important;
+}
+
+.appear{
+    left: 0 !important;
+    z-index: 100 !important;
+}
+
 .menu_box{
     margin: 10px;
 }
@@ -86,7 +104,7 @@ body {
 }
 
 .info_box{
-    background-color: rgb(212, 212, 212);
+    background-color: rgba(255, 255, 255, 1);
     position: fixed;
     width: 86%;
     height: 50px;
@@ -104,10 +122,11 @@ body {
 
 .product_area{
     background-color: slategray;
-    width: 86%;
+    width: 85%;
     position: relative;
-    left: 14%;
+    left: 15%;
     top: 24%;
+    bottom: 0;
     display: grid;
     /* column-width: auto;
     column-count: 4; */
@@ -116,7 +135,7 @@ body {
     column-gap: 20px;
     margin: 0;
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 
 .product_box{
@@ -286,6 +305,16 @@ a:link{
     
 }
 
+@media screen and (min-width: 1300px){
+    .button{
+        font-size: 1.5rem !important;
+    }
+
+    .menu_box ul{
+        left: -10px;
+    }
+}
+
 @media screen and (max-width: 1200px) { 
     .product_area{
         grid-template-columns: 1fr 1fr 1fr;
@@ -302,6 +331,8 @@ a:link{
     .product_area{
         top: 20%;
     }
+
+    
 }
 
 @media screen and (max-width: 800px) { 
@@ -316,7 +347,7 @@ a:link{
         left: 0;
     }
 
-    .menu{
+    .menu {
         left: -50%;
         width: 50%;
     }
@@ -335,15 +366,11 @@ a:link{
 
 
 @media screen and (max-width: 700px) {
-    .menu{
-        left: -50%;
-        width: 50%;
-    }
 
     .product_area{
         width: 100% !important;
         left: 0px;
-        top: 10%;
+        top: 15%;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -354,7 +381,7 @@ a:link{
 
     .product_info{
         height: 45px;
-        top: 150px;;
+        top: 150px;
     }
 
     .price{
@@ -396,16 +423,10 @@ a:link{
         top: 10%;
     }
 
-    /* .product_box{
-        height: 120px;
-        width: 120px; */
-        /* margin-bottom: 40px; */
-    /* }
-
-    .product_info{
-        height: 36px;
-        top: 120px;
-    } */
+    .product_box{
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
 
     i{
         font-size: 1.5rem !important;
