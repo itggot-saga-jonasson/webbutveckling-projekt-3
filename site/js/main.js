@@ -23,4 +23,4 @@ function recommended(){
     document.getElementsByClassName("product_area")[0].innerHTML = recommendContainment
     console.log = "hellu"
 }
-// if it's stupid, but it works, it ain't stupid
+// if it's stupid but it works, it ain't stupid
