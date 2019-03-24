@@ -43,7 +43,7 @@ body {
 .img_galaxy{
     width: 100%;
     height: 100%;
-    background-image: url("../img/galaxy.png");
+    background-image: url("../img/red_galaxy.png");
     background-size: 100%;
     background-position: 50%;
 }
@@ -66,13 +66,36 @@ body {
     height: 90%;
 }
 
+.img_logo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/logo.png");
+    height: 100%;
+    width: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
 
 .menu {
-    background-color: rgb(77, 66, 66);
+    background-color: rgb(134, 0, 0);
     width: 15%;
     height: 100%;
     position: fixed;
     z-index: 15;
+}
+
+.pointer{
+    background-image: url("../img/pointer.png");
+    background-size: 100%;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 5px;
+    top: 17px;
 }
 
 .cover{
@@ -121,12 +144,11 @@ body {
 }
 
 .product_area{
-    background-color: slategray;
     width: 85%;
     position: relative;
     left: 15%;
     top: 24%;
-    bottom: 0;
+    bottom: 0 !important;
     display: grid;
     /* column-width: auto;
     column-count: 4; */
@@ -134,8 +156,18 @@ body {
     /* grid-template-rows: 50px auto; */
     column-gap: 20px;
     margin: 0;
-    height: auto;
-    padding-bottom: 80px;
+}
+
+#this_should_be_the_same_color{
+    background-color: darkgrey;
+}
+
+.footser{
+    z-index: -10;
+    position: fixed;
+    height: 1000px;
+    width: 100%;
+    bottom: 0;
 }
 
 .product_box{
@@ -165,6 +197,10 @@ body {
 
 #asteroid_3{
     background-image: url("../img/asteroid_3.png");
+}
+
+#comet_1{
+    background-image: url("../img/comet_1.png");
 }
 
 .product_box:hover{
@@ -245,7 +281,7 @@ p u{
 
 
 .button{
-    font-size: 1rem;
+    font-size: 20px;
     color: white;
     font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     cursor: pointer;
@@ -257,7 +293,7 @@ p u{
     width: 100%;
     /* margin-left: 0; */
     position: relative;
-    left: -20px;
+    left: -10px;
     margin-bottom: 10px;
 }
 
@@ -277,6 +313,11 @@ a:link{
 .cart{
     position: fixed;
     right: 20%;
+}
+
+.home{
+    position: fixed;
+    right: 40%;
 }
 
 .info{
@@ -316,15 +357,12 @@ a:link{
     
 }
 
-@media screen and (min-width: 1300px){
-    .button{
-        font-size: 1.5rem !important;
-    }
+/* @media screen and (min-width: 1300px){
 
     .menu_box ul{
         left: -10px;
     }
-}
+} */
 
 @media screen and (max-width: 1200px) { 
     .product_area{
@@ -343,15 +381,28 @@ a:link{
         top: 20%;
     }
 
-    
+    .button{
+        font-size: 15px;
+    }
 }
 
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 1000px) { 
+
+    .menu_box ul{
+        left: -20px;
+    }
+
+}
+    
+    
+
+@media screen and (max-width: 900px) { 
     .img_box{
         height: 20%;
         width: 100%;
         left: 0;
     }
+    
 
     .info_box{
         width: 100%;
@@ -359,8 +410,8 @@ a:link{
     }
 
     .menu {
-        left: -50%;
-        width: 50%;
+        left: -40%;
+        width: 40%;
     }
 
     .product_area{
@@ -370,8 +421,25 @@ a:link{
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .button{
+        font-size: 20px;
+    }
+
+    .pointer{
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 10px;
+        top: 17px;
+    }
+
     .hamburg_menu{
         visibility: visible;
+    }
+
+    .menu_box ul{
+        left: 0px !important;
     }
 }
 
@@ -383,6 +451,10 @@ a:link{
         left: 0px;
         top: 15%;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .img_logo{
+        width: 70%;
     }
 
     .product_box{
@@ -416,6 +488,10 @@ a:link{
     .img_object{
         visibility: hidden;
     }
+    .menu {
+        left: -50%;
+        width: 50%;
+    }
 
 
 }
@@ -424,6 +500,11 @@ a:link{
     .product_area{
         grid-template-columns: 1fr 1fr;
     }
+
+    .img_logo{
+        visibility: hidden;
+    }
+
     .img_box{
         left: 0;
         width: 100%;
@@ -439,6 +520,11 @@ a:link{
         margin-bottom: 80px;
     }
 
+    .menu {
+        left: -70%;
+        width: 70%;
+    }
+
     i{
         font-size: 1.5rem !important;
     }
@@ -448,6 +534,10 @@ a:link{
     
     .info{
         right: 40%;
+    }
+
+    .home{
+        right: 55%;
     }
 
 }

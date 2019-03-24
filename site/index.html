@@ -6,23 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Buy your own comet!</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="img/galaxy.png">
+    <link rel="icon" href="img/red_galaxy.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
         <div class="cover" onclick="bringBackMenu()"></div>
         <div class="menu">
+            <div class="pointer"></div>
             <div class="menu_box" onclick="bringBackMenu()">
                 <ul>
                     <li><div class="button"onclick="recommended()"><u>Recommended</u></div></li>
                     <!-- <li><div class="button">I am button</div></li> -->
-                    <li><div class="button"><u>Space rocks</u></div></li>
+                    <li><div class="button"><u>Space objects</u></div></li>
                     <ul>
                         <li><div class="button">Asteroids</div></li>
                         <li><div class="button">Comets</div></li>
+                        <li><div class="button">Junk satelites</div></li>
                     </ul>
-                    <li><div class="button">I am button</div></li>
+                    <li><div class="button"><u>Materials</u></div></li>
+                    <ul>
+                        <li><div class="button">Gold</div></li>
+                        <li><div class="button">Silver</div></li>
+                        <li><div class="button">Copper</div></li>
+                    </ul>
                 </ul>
                 
             </div>
@@ -32,7 +39,13 @@
             </div>
             <div class="img_object">
             </div>
+            <div class="img_logo"></div>
                 <div class="img_stuff">
+                    <div class="home">
+                        <a href="index.html">
+                            <i class="material-icons">home</i>
+                        </a>
+                    </div>
                     <div class="info">
                         <a href="">
                             <i class="material-icons">info</i>
@@ -61,8 +74,8 @@
                 </div>
             </img>
         </div>
-        <div class="info_box"><p>Recommended</p></div>
-        <div class="product_area">
+        <div class="info_box"><p>Not recommended</p></div>
+        <div class="product_area" id = "this_should_be_the_same_color">
                 <div class="product_box">
                         <a href="">
                             <div class="product_img" id="asteroid_1"></div>
@@ -97,6 +110,23 @@
                         </i>
                     </div>
                 </div>
+                <div class="product_box">
+                        <a href="">
+                            <div class="product_img" id="comet_1"></div>
+                        </a>
+                    <div class="product_info">
+                        <h1>Atwell</h1>
+                        <ul>
+                            <p><u>Radius: 2km</u></p>
+                            <p>83% water</p>
+                            <p>11% iron dust</p>
+                        </ul>
+                        <div class="price">¤300,000</div>
+                        <i class="material-icons">
+                            shopping_cart
+                        </i>
+                    </div>
+                </div>
                 <!-- <div class="product_box">
                         <a href="">
                             <div class="product_img" id="asteroid_3"></div>
@@ -115,164 +145,10 @@
                         </i>
                     </div>
                 </div> -->
-                <div class="product_box">
-                        <a href="">
-                            <div class="product_img"></div>
-                        </a>
-                    <div class="product_info">
-                        <h1>Vinda 49</h1>
-                        <ul>
-                            <p>Radius: 1km</p>
-                            <p>60% gold</p>
-                            <p>20% copper</p>
-                        </ul>
-                        <div class="price">¤500.00</div>
-                        <i class="material-icons">
-                            shopping_cart
-                        </i>
-                    </div>
-                </div>
-                <div class="product_box">
-                        <a href="">
-                            <div class="product_img"></div>
-                        </a>
-                    <div class="product_info">
-                        <h1>Vinda 49</h1>
-                        <ul>
-                            <p>Radius: 1km</p>
-                            <p>60% gold</p>
-                            <p>20% copper</p>
-                        </ul>
-                        <div class="price">¤500.00</div>
-                        <i class="material-icons">
-                            shopping_cart
-                        </i>
-                    </div>
-                </div>
-                <div class="product_box">
-                        <a href="">
-                            <div class="product_img"></div>
-                        </a>
-                    <div class="product_info">
-                        <h1>Vinda 49</h1>
-                        <ul>
-                            <p>Radius: 1km</p>
-                            <p>60% gold</p>
-                            <p>20% copper</p>
-                        </ul>
-                        <div class="price">¤500.00</div>
-                        <i class="material-icons">
-                            shopping_cart
-                        </i>
-                    </div>
-                </div>
-                <div class="product_box">
-                        <a href="">
-                            <div class="product_img"></div>
-                        </a>
-                    <div class="product_info">
-                        <h1>Vinda 49</h1>
-                        <ul>
-                            <p>Radius: 1km</p>
-                            <p>60% gold</p>
-                            <p>20% copper</p>
-                        </ul>
-                        <div class="price">¤500.00</div>
-                        <i class="material-icons">
-                            shopping_cart
-                        </i>
-                    </div>
-                </div>
-                <div class="product_box">
-                        <a href="">
-                            <div class="product_img"></div>
-                        </a>
-                    <div class="product_info">
-                        <h1>Vinda 49</h1>
-                        <ul>
-                            <p>Radius: 1km</p>
-                            <p>60% gold</p>
-                            <p>20% copper</p>
-                        </ul>
-                        <div class="price">¤500.00</div>
-                        <i class="material-icons">
-                            shopping_cart
-                        </i>
-                    </div>
-                </div>
-                <div class="product_box">
-                        <a href="">
-                            <div class="product_img"></div>
-                        </a>
-                    <div class="product_info">
-                        <h1>Vinda 49</h1>
-                        <ul>
-                            <p>Radius: 1km</p>
-                            <p>60% gold</p>
-                            <p>20% copper</p>
-                        </ul>
-                        <div class="price">¤500.00</div>
-                        <i class="material-icons">
-                            shopping_cart
-                        </i>
-                    </div>
-                </div>
-                <div class="product_box">
-                        <a href="">
-                            <div class="product_img"></div>
-                        </a>
-                    <div class="product_info">
-                        <h1>Vinda 49</h1>
-                        <ul>
-                            <p>Radius: 1km</p>
-                            <p>60% gold</p>
-                            <p>20% copper</p>
-                        </ul>
-                        <div class="price">¤500.00</div>
-                        <i class="material-icons">
-                            shopping_cart
-                        </i>
-                    </div>
-                </div>
-                <div class="product_box">
-                        <a href="">
-                            <div class="product_img"></div>
-                        </a>
-                    <div class="product_info">
-                        <h1>Vinda 49</h1>
-                        <ul>
-                            <p>Radius: 1km</p>
-                            <p>60% gold</p>
-                            <p>20% copper</p>
-                        </ul>
-                        <div class="price">¤500.00</div>
-                        <i class="material-icons">
-                            shopping_cart
-                        </i>
-                    </div>
-                </div>
-                <div class="product_box">
-                        <a href="">
-                            <div class="product_img"></div>
-                        </a>
-                    <div class="product_info">
-                        <h1>Vinda 49</h1>
-                        <ul>
-                            <p>Radius: 1km</p>
-                            <p>60% gold</p>
-                            <p>20% copper</p>
-                        </ul>
-                        <div class="price">¤500.00</div>
-                        <i class="material-icons">
-                            shopping_cart
-                        </i>
-                    </div>
-                </div>
-            
-            
-            
+                
 
         </div>
+        <div class="footser" id = "this_should_be_the_same_color"></div>
 
     </div>
     <script src="js/main.js"></script>
