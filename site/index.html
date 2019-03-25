@@ -16,14 +16,16 @@
             <div class="pointer"></div>
             <div class="menu_box" onclick="bringBackMenu()">
                 <ul>
-                    <li><div class="button"onclick="recommended()"><u>Recommended</u></div></li>
-                    <!-- <li><div class="button">I am button</div></li> -->
+                    <li><div class="button"onclick="recommended()">Recommended</div></li>
+                    <li><div class="button">Factory kits</div></li>
+                    <div class="spacing"></div>
                     <li><div class="button"><u>Space objects</u></div></li>
                     <ul>
                         <li><div class="button">Asteroids</div></li>
                         <li><div class="button">Comets</div></li>
                         <li><div class="button">Junk satelites</div></li>
                     </ul>
+                    <div class="spacing"></div>
                     <li><div class="button"><u>Materials</u></div></li>
                     <ul>
                         <li><div class="button">Gold</div></li>
@@ -74,9 +76,9 @@
                 </div>
             </img>
         </div>
-        <div class="info_box"><p>Not recommended</p></div>
+        <div class="info_box"><p>Recommended</p></div>
         <div class="product_area" id = "this_should_be_the_same_color">
-                <div class="product_box">
+                <div class="product_box visible" id="asteroid_1">
                         <a href="">
                             <div class="product_img" id="asteroid_1"></div>
                         </a>
@@ -93,7 +95,7 @@
                         </i>
                     </div>
                 </div>
-                <div class="product_box">
+                <div class="product_box" id="asteroid_2">
                         <a href="">
                             <div class="product_img" id="asteroid_2"></div>
                         </a>
@@ -110,7 +112,7 @@
                         </i>
                     </div>
                 </div>
-                <div class="product_box">
+                <div class="product_box" id="comet_1">
                         <a href="">
                             <div class="product_img" id="comet_1"></div>
                         </a>
@@ -127,7 +129,7 @@
                         </i>
                     </div>
                 </div>
-                <!-- <div class="product_box">
+                <div class="product_box"id="asteroid_3">
                         <a href="">
                             <div class="product_img" id="asteroid_3"></div>
                         </a>
@@ -144,7 +146,7 @@
                             shopping_cart
                         </i>
                     </div>
-                </div> -->
+                </div>
                 
 
         </div>
