@@ -18,11 +18,12 @@
                 <ul>
                     <li><div class="button"onclick="recommended()">Recommended</div></li>
                     <li><div class="button">Factory kits</div></li>
+                    <li><div class="button">Contracts</div></li>
                     <div class="spacing"></div>
                     <li><div class="button"><u>Space objects</u></div></li>
                     <ul>
-                        <li><div class="button">Asteroids</div></li>
-                        <li><div class="button">Comets</div></li>
+                        <li><div class="button" onclick="asteroids()">Asteroids</div></li>
+                        <li><div class="button"onclick="comets()">Comets</div></li>
                         <li><div class="button">Junk satelites</div></li>
                     </ul>
                     <div class="spacing"></div>
@@ -41,6 +42,7 @@
             </div>
             <div class="img_object">
             </div>
+            <div class="img_factory"></div>
             <div class="img_logo"></div>
                 <div class="img_stuff">
                     <div class="home">
@@ -78,7 +80,7 @@
         </div>
         <div class="info_box"><p>Recommended</p></div>
         <div class="product_area" id = "this_should_be_the_same_color">
-                <div class="product_box visible" id="asteroid_1">
+                <div class="product_box">
                         <a href="">
                             <div class="product_img" id="asteroid_1"></div>
                         </a>
@@ -95,7 +97,7 @@
                         </i>
                     </div>
                 </div>
-                <div class="product_box" id="asteroid_2">
+                <div class="product_box">
                         <a href="">
                             <div class="product_img" id="asteroid_2"></div>
                         </a>
@@ -112,24 +114,7 @@
                         </i>
                     </div>
                 </div>
-                <div class="product_box" id="comet_1">
-                        <a href="">
-                            <div class="product_img" id="comet_1"></div>
-                        </a>
-                    <div class="product_info">
-                        <h1>Atwell</h1>
-                        <ul>
-                            <p><u>Radius: 2km</u></p>
-                            <p>83% water</p>
-                            <p>11% iron dust</p>
-                        </ul>
-                        <div class="price">¤300,000</div>
-                        <i class="material-icons">
-                            shopping_cart
-                        </i>
-                    </div>
-                </div>
-                <div class="product_box"id="asteroid_3">
+                <div class="product_box">
                         <a href="">
                             <div class="product_img" id="asteroid_3"></div>
                         </a>
@@ -146,6 +131,41 @@
                             shopping_cart
                         </i>
                     </div>
+                </div>
+                <div class="product_box">
+                    <a href="">
+                        <div class="product_img" id="comet_1"></div>
+                    </a>
+                <div class="product_info">
+                    <h1>Atwell</h1>
+                    <ul>
+                        <p><u>Radius: 2km</u></p>
+                        <p>83% water</p>
+                        <p>11% iron dust</p>
+                    </ul>
+                    <div class="price">¤300,000</div>
+                    <i class="material-icons">
+                        shopping_cart
+                    </i>
+                </div>
+                </div>
+                <div class="product_box">
+                    <a href="">
+                        <div class="product_img" id="junk_1"></div>
+                    </a>
+                <div class="product_info">
+                    <h1>Agrara R74</h1>
+                    <ul>
+                        <p><u>Radius: 3km</u></p>
+                        <p>45% plastics</p>
+                        <p>10% metals</p>
+                        <p>35% combustible</p>
+                    </ul>
+                    <div class="price">¤50,000</div>
+                    <i class="material-icons">
+                        shopping_cart
+                    </i>
+                </div>
                 </div>
                 
 
