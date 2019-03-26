@@ -219,6 +219,18 @@ body {
     background-image: url("../img/junk_1.png");
 }
 
+#factory_1{
+    background-image: url("../img/factory_1.png");
+}
+
+#factory_2{
+    background-image: url("../img/factory_2.png");
+}
+
+#athena{
+    background-image: url("../img/athena.png");    
+}
+
 .product_box:hover{
     box-shadow: 0px 0px 45px 5px rgba(0,0,0,0.3);
 }
@@ -278,7 +290,7 @@ body {
     margin: 10px;
     font-size: 0.8rem;
     position: relative;
-    top: -15px;
+    top: -20px;
     text-align: center;
     color: black;
     visibility: hidden;
@@ -433,6 +445,10 @@ a:link{
         left: -20px;
     }
 
+    .button{
+        font-size: 15px;
+    }
+
 }
     
     
@@ -462,10 +478,6 @@ a:link{
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .button{
-        font-size: 20px;
-    }
-
     .pointer{
         width: 30px;
         height: 30px;
@@ -480,7 +492,7 @@ a:link{
     }
 
     .menu_box ul{
-        left: 0px !important;
+        left: -20px !important;
     }
 }
 
