@@ -30,6 +30,18 @@ body {
     height: 100vh;
 }
 
+.mini_greeter{
+    height: 100vh;
+    right: 0;
+    left: 0;
+    position: fixed;
+    background-image: url("../img/banner_art.png");
+    background-size: 100%;
+    z-index: 100;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
 .img_box {
     background-color: rgb(63, 72, 82);
     width: 85%;

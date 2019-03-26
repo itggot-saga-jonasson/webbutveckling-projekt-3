@@ -54,3 +54,13 @@ function comets(){
     document.getElementsByClassName("product_area")[0].innerHTML = Atwell
     document.getElementsByClassName("info_box")[0].innerHTML = "<p>Comets</p>"
 }
+
+
+// function greeter(){
+//     if(document.body.getElementsByClassName("product_area").scrollTop===0){
+//         console.log("hellu")
+//         document.getElementsByClassName("greeter")[0].innerHTML = '<div class="mini_greeter"></div>'
+//     }else{
+//         document.getElementsByClassName("greeter")[0].innerHTML = ''
+//     }
+// }
