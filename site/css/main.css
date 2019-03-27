@@ -30,18 +30,6 @@ body {
     height: 100vh;
 }
 
-.mini_greeter{
-    height: 100vh;
-    right: 0;
-    left: 0;
-    position: fixed;
-    background-image: url("../img/banner_art.png");
-    background-size: 100%;
-    z-index: 100;
-    background-repeat: no-repeat;
-    pointer-events: none;
-}
-
 .img_box {
     background-color: rgb(63, 72, 82);
     width: 85%;
@@ -223,6 +211,10 @@ body {
     background-image: url("../img/asteroid_3.png");
 }
 
+#asteroid_4{
+    background-image: url("../img/asteroid_4.png");
+}
+
 #comet_1{
     background-image: url("../img/comet_1.png");
 }
@@ -237,6 +229,14 @@ body {
 
 #factory_2{
     background-image: url("../img/factory_2.png");
+}
+
+#factory_3{
+    background-image: url("../img/factory_3.png");
+}
+
+#factory_kit_1{
+    background-image: url("../img/factory_kit_1.png");
 }
 
 #athena{
@@ -422,12 +422,12 @@ a:link{
     
 }
 
-/* @media screen and (min-width: 1300px){
+@media screen and (max-width: 1300px){
 
-    .menu_box ul{
-        left: -10px;
+    .button{
+        font-size: 17px;
     }
-} */
+}
 
 @media screen and (max-width: 1200px) { 
     .product_area{
@@ -445,6 +445,10 @@ a:link{
     .product_area{
         top: 20%;
     }
+    
+    .menu_box ul{
+        left: -20px;
+    }
 
     .button{
         font-size: 15px;
@@ -453,12 +457,10 @@ a:link{
 
 @media screen and (max-width: 1000px) { 
 
-    .menu_box ul{
-        left: -20px;
-    }
+    
 
     .button{
-        font-size: 15px;
+        font-size: 13px;
     }
 
 }
@@ -506,6 +508,10 @@ a:link{
     .menu_box ul{
         left: -20px !important;
     }
+
+    .button{
+        font-size: 25px;
+    }
 }
 
 
@@ -533,7 +539,12 @@ a:link{
     }
 
     .price{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        bottom: 5px;
+    }
+
+    .product_info i{
+        font-size: 1.3rem !important;
     }
 
     .img_box{
@@ -544,6 +555,15 @@ a:link{
 
     .info_box{
         top: 15%;
+    }
+
+    .product_info ul{
+        padding: 0 !important;
+        text-align: center;
+    }
+
+    .description{
+        font-size: 0.7rem;
     }
 
     .name{
@@ -610,4 +630,34 @@ a:link{
         right: 55%;
     }
 
+}
+
+@media screen and (max-width: 350px) {
+    .product_area{
+        column-gap: 0px !important;
+    }
+}
+
+@media screen and (max-height: 850px) {
+    .button{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .button{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-height: 570px) {
+    .button{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .button{
+        font-size: 10px;
+    }
 }

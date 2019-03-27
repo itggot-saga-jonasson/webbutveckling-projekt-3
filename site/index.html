@@ -12,28 +12,40 @@
 <body onload="recommended()">
     <div class="wrapper">
         <div class="cover" onclick="bringBackMenu()"></div>
-        <!-- <div class="greeter">
-        </div> -->
         <div class="menu">
-            <div class="pointer"></div>
+            <!-- <div class="pointer"></div> -->
             <div class="menu_box" onclick="bringBackMenu()">
                 <ul>
                     <li><div class="button"onclick="recommended()">Recommended</div></li>
-                    <li><div class="button">Factory kits</div></li>
-                    <li><div class="button">Contracts</div></li>
                     <div class="spacing"></div>
-                    <li><div class="button"><u>Space objects</u></div></li>
+                    <li><div class="button"onclick="corporating()"><u>Corporating</u></div></li>
+                    <ul>
+                        <li><div class="button"onclick="factoryKits()">Factory kits</div></li>
+                        <li><div class="button"onclick="contracts()">Contracts</div></li>
+                    </ul>
+                    <div class="spacing"></div>
+                    <li><div class="button"onclick="spaceObjects()"><u>Space objects</u></div></li>
                     <ul>
                         <li><div class="button" onclick="asteroids()">Asteroids</div></li>
                         <li><div class="button"onclick="comets()">Comets</div></li>
-                        <li><div class="button">Scrap satelites</div></li>
+                        <li><div class="button"onclick="scrapSatellites()">Scrap satellites</div></li>
                     </ul>
                     <div class="spacing"></div>
-                    <li><div class="button"><u>Materials</u></div></li>
+                    <li><div class="button"onclick="materials()"><u>Materials</u></div></li>
                     <ul>
-                        <li><div class="button">Gold</div></li>
-                        <li><div class="button">Silver</div></li>
-                        <li><div class="button">Copper</div></li>
+                        <li><div class="button"onclick="gold()">Gold</div></li>
+                        <li><div class="button"onclick="silver()">Silver</div></li>
+                        <li><div class="button"onclick="copper()">Copper</div></li>
+                        <li><div class="button"onclick="iron()">Iron</div></li>
+                        <li><div class="button"onclick="platinum()">Platinum</div></li>
+                        <div class="spacing"></div>
+                        <li><div class="button"onclick="uranium()">Uranium</div></li>
+                        <li><div class="button"onclick="coal()">Coal</div></li>
+                        <li><div class="button"onclick="water()">Water</div></li>
+                        <div class="spacing"></div>
+                        <li><div class="button"onclick="plastics()">Plastics</div></li>
+                        <li><div class="button"onclick="metals()">Metals (unsorted)</div></li>
+                        <li><div class="button"onclick="incendiary()">Incendiary</div></li>
                     </ul>
                 </ul>
                 
