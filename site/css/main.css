@@ -43,9 +43,8 @@ body {
 .img_galaxy{
     width: 100%;
     height: 100%;
-    background-image: url("../img/red_galaxy.png");
-    background-size: 100%;
-    background-position: 50%;
+    background-image: url("../img/galaxy/red_galaxy_480.png");
+    /* background-size: 100%; */
 }
 
 .img_object{
@@ -53,7 +52,7 @@ body {
     height: 100%; 
     position: absolute;
     bottom: 0;
-    background-image: url("../img/ppl_standing_on_asteroid.png");
+    background-image: url("../img/ppl/ppl_standing_on_asteroid_337.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -70,7 +69,7 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
-    background-image: url("../img/logo.png");
+    background-image: url("../img/logo/logo_900.png");
     height: 100%;
     width: 50%;
     background-size: 100%;
@@ -81,13 +80,13 @@ body {
 .img_factory{
     position: absolute;
     left: 20%;
-    top: -20%;
-    background-image: url("../img/factory.png");
+    top: 10%;
+    background-image: url("../img/factory/factory_337.png");
     height: 100%;
     width: 20%;
-    background-size: 100%;
+    background-size: 80%;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
 }
 
 
@@ -126,6 +125,7 @@ body {
 .appear{
     left: 0 !important;
     z-index: 100 !important;
+    pointer-events: all !important;
 }
 
 .menu_box{
@@ -215,8 +215,16 @@ body {
     background-image: url("../img/200px/asteroid_4_200.png");
 }
 
+#asteroid_5{
+    background-image: url("../img/200px/asteroid_5_200.png");
+}
+
 #comet_1{
     background-image: url("../img/200px/comet_1_200.png");
+}
+
+#comet_2{
+    background-image: url("../img/200px/comet_2_200.png");
 }
 
 #junk_1{
@@ -358,7 +366,7 @@ p u{
     width: 100%;
     /* margin-left: 0; */
     position: relative;
-    left: -10px;
+    left: -25px;
     margin-bottom: 10px;
 }
 
@@ -415,6 +423,28 @@ a:link{
     visibility: hidden;
 }
 
+@media screen and (min-width: 2000px) { 
+    .product_area{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr !important;
+    }
+
+    .img_galaxy{
+        background-image: url("../img/galaxy/red_galaxy_2000.png");
+        background-size: 100%;
+        background-position: bottom;
+    }
+
+    .img_stuff i{
+        font-size: 3.5rem !important;
+    }
+
+    .button{
+        font-size: 30px;
+    }
+
+}
+    
+
 @media screen and (min-width: 1400px) { 
     .product_area{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -447,7 +477,7 @@ a:link{
     }
     
     .menu_box ul{
-        left: -20px;
+        left: -30px;
     }
 
     .button{
@@ -455,10 +485,7 @@ a:link{
     }
 }
 
-@media screen and (max-width: 1000px) { 
-
-    
-
+@media screen and (max-width: 1100px) { 
     .button{
         font-size: 13px;
     }
@@ -474,6 +501,13 @@ a:link{
         left: 0;
     }
     
+    .img_object{
+        background-image: url("../img/ppl/ppl_standing_on_asteroid_180.png");
+    }
+
+    .img_factory{
+        background-image: url("../img/factory/factory_180.png");
+    }
 
     .info_box{
         width: 100%;
@@ -483,6 +517,7 @@ a:link{
     .menu {
         left: -40%;
         width: 40%;
+        pointer-events: none;
     }
 
     .product_area{
@@ -562,6 +597,14 @@ a:link{
         text-align: center;
     }
 
+    .product_info p{
+        font-size: 0.7rem;
+    }
+
+    .product_info h1{
+        font-size: 1.1rem;
+    }
+
     .description{
         font-size: 0.7rem;
     }
@@ -600,9 +643,18 @@ a:link{
     #asteroid_4{
         background-image: url("../img/150px/asteroid_4_150.png");
     }
+
+    #asteroid_5{
+        background-image: url("../img/150px/asteroid_5_150.png");
+    }
+    
     
     #comet_1{
         background-image: url("../img/150px/comet_1_150.png");
+    }
+
+    #comet_2{
+        background-image: url("../img/150px/comet_2_150.png");
     }
     
     #junk_1{
@@ -701,8 +753,8 @@ a:link{
     }
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 530px) {
     .button{
-        font-size: 10px;
+        font-size: 12px;
     }
 }
