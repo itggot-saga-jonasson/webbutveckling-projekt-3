@@ -32,13 +32,16 @@ Athena = productGenerator("", "athena", "ATHENA IV", "", "", "", "", "ATHENA is 
 EmpireMFG = productGenerator("", "factory_1", "Empire Mfg.", "GDP: ¤2,000,000", "", "", "", "Empire Mfg. specializes in shuttle- and spacecraft development.", "¤2,700,000")
 CobaltCorp = productGenerator("", "factory_2", "Cobalt Corp.", "GDP: ¤1,300,000", "", "", "", "Cobolt Corp. specializes in soft drink production.", "¤1,900,000")
 ApexiInc = productGenerator("", "factory_3", "Apexi Inc.", "GDP: ¤500,000", "", "", "", "Apexi Inc. specializes in ready-made, factory-produced desserts and sweets.", "¤900,000")
+CanicsInd = productGenerator("", "factory_4", "Canics Ind.", "GDP: ¤2,000,000", "", "", "", "Canics Ind. specializes in the production of food and toys for pets.", "¤3,400,000")
 R437 = productGenerator("", "factory_kit_1", "R437 - Factory kit", "500m conveyors", "5t iron", "12t plastics", "500kg coal", "", "¤150,000")
+Aewei = productGenerator("", "factory_kit_2", "Aewei - Factory kit", "1km conveyors", "300kg platinum", "2t coal", "200kg gold", "", "¤200,000")
 Vinda49 = productGenerator("", "asteroid_1", "Vinda 49", "Radius: 1km", "60% gold", "20% copper", "", "", "¤500,000")
 Hatov = productGenerator("", "asteroid_2", "Hatov", "Radius: 3km", "80% copper", "10% iron", "", "", "¤750,000")
 Mapus7VU = productGenerator("", "asteroid_3", "Mapus 7VU", "Radius: 200m", "40% gold", "10% copper", "30% iron", "", "¤200,000")
 Zenviri = productGenerator("", "asteroid_4", "Zenviri", "Radius: 1.5km", "65% uranium", "30% coal", "", "", "¤700,000")
 Atwell = productGenerator("", "comet_1", "Atwell", "Radius: 2km", "83% water", "11% iron dust", "", "", "¤300,000")
 AgraraR74 = productGenerator("", "junk_1", "Agrara R74", "Radius: 3km", "45% plastics", "10% metals", "35% incendiary", "", "¤50,000")
+Pollock = productGenerator("", "junk_2", "Pollock", "Radius: 5km", "87% plastics", "9% metals", "", "", "¤70,000")
 Gabri = productGenerator("", "asteroid_5", "Gabri", "Radius: 1.5km", "55% platinum", "30% coal", "10% copper", "", "¤900,000")
 Sputnik = productGenerator("", "comet_2", "Sputnik", "Radius: 2.5km", "68% water", "21% silver dust", "5% platinum dust", "", "¤100,000")
 
@@ -46,7 +49,7 @@ Sputnik = productGenerator("", "comet_2", "Sputnik", "Radius: 2.5km", "68% water
 
 
 function recommended(){
-    document.getElementsByClassName("product_area")[0].innerHTML = Athena + EmpireMFG + CobaltCorp + ApexiInc + R437 + Vinda49 + Hatov + Mapus7VU + Atwell + AgraraR74 + Zenviri + Gabri + Sputnik
+    document.getElementsByClassName("product_area")[0].innerHTML = Athena + EmpireMFG + CobaltCorp + ApexiInc + CanicsInd + R437 + Aewei + Vinda49 + Hatov + Mapus7VU + Atwell + AgraraR74 + Zenviri + Gabri + Sputnik + Pollock
     document.getElementsByClassName("info_box")[0].innerHTML = "<p>Recommended</p>"
 }
 // holy shit it works
@@ -54,24 +57,24 @@ function recommended(){
 
 
 function corporating(){
-    document.getElementsByClassName("product_area")[0].innerHTML = Athena + EmpireMFG + CobaltCorp + ApexiInc + R437
+    document.getElementsByClassName("product_area")[0].innerHTML = Athena + EmpireMFG + CobaltCorp + ApexiInc + R437 + CanicsInd + Aewei
     document.getElementsByClassName("info_box")[0].innerHTML = "<p>Corporating</p>"
 }
 
 function factoryKits(){
-    document.getElementsByClassName("product_area")[0].innerHTML = Athena + R437
+    document.getElementsByClassName("product_area")[0].innerHTML = Athena + R437 + Aewei
     document.getElementsByClassName("info_box")[0].innerHTML = "<p>Factory kits</p>"
 }
 
 function contracts(){
-    document.getElementsByClassName("product_area")[0].innerHTML = EmpireMFG + CobaltCorp + ApexiInc
+    document.getElementsByClassName("product_area")[0].innerHTML = EmpireMFG + CobaltCorp + ApexiInc + CanicsInd
     document.getElementsByClassName("info_box")[0].innerHTML = "<p>Contracts</p>"
 }
 
 
 
 function spaceObjects(){
-    document.getElementsByClassName("product_area")[0].innerHTML = Vinda49 + Hatov + Mapus7VU + Atwell + AgraraR74 + Zenviri + Gabri + Sputnik
+    document.getElementsByClassName("product_area")[0].innerHTML = Vinda49 + Hatov + Mapus7VU + Atwell + AgraraR74 + Zenviri + Gabri + Sputnik + Pollock
     document.getElementsByClassName("info_box")[0].innerHTML = "<p>Space objects</p>"
 }
 
@@ -86,7 +89,7 @@ function comets(){
 }
 
 function scrapSatellites(){
-    document.getElementsByClassName("product_area")[0].innerHTML = AgraraR74
+    document.getElementsByClassName("product_area")[0].innerHTML = AgraraR74 + Pollock
     document.getElementsByClassName("info_box")[0].innerHTML = "<p>Scrap satellites</p>"
 }
 
@@ -137,12 +140,12 @@ function water(){
 }
 
 function plastics(){
-    document.getElementsByClassName("product_area")[0].innerHTML = AgraraR74
+    document.getElementsByClassName("product_area")[0].innerHTML = AgraraR74 + Pollock
     document.getElementsByClassName("info_box")[0].innerHTML = "<p>Plastics</p>"
 }
 
 function metals(){
-    document.getElementsByClassName("product_area")[0].innerHTML = AgraraR74
+    document.getElementsByClassName("product_area")[0].innerHTML = AgraraR74 + Pollock
     document.getElementsByClassName("info_box")[0].innerHTML = "<p>Metals (unsorted)</p>"
 }
 

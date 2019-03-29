@@ -37,14 +37,12 @@ body {
     position: fixed;
     left: 15%;
     z-index: 15;
-    /* background-image: url("../img/banner_art.png"); */
     color: white;
 }
 .img_galaxy{
     width: 100%;
     height: 100%;
     background-image: url("../img/galaxy/red_galaxy_480.png");
-    /* background-size: 100%; */
 }
 
 .img_object{
@@ -162,10 +160,7 @@ body {
     top: 24%;
     bottom: 0 !important;
     display: grid;
-    /* column-width: auto;
-    column-count: 4; */
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: 50px auto; */
     column-gap: 20px;
     margin: 0;
 }
@@ -231,6 +226,10 @@ body {
     background-image: url("../img/200px/junk_1_200.png");
 }
 
+#junk_2{
+    background-image: url("../img/200px/junk_2_200.png");
+}
+
 #factory_1{
     background-image: url("../img/200px/factory_1_200.png");
 }
@@ -243,8 +242,16 @@ body {
     background-image: url("../img/200px/factory_3_200.png");
 }
 
+#factory_4{
+    background-image: url("../img/200px/factory_4_200.png");
+}
+
 #factory_kit_1{
     background-image: url("../img/200px/factory_kit_1_200.png");
+}
+
+#factory_kit_2{
+    background-image: url("../img/200px/factory_kit_2_200.png");
 }
 
 #athena{
@@ -364,16 +371,10 @@ p u{
 .menu_box ul{
     list-style: none ;
     width: 100%;
-    /* margin-left: 0; */
     position: relative;
     left: -25px;
     margin-bottom: 10px;
 }
-
-/* .menu_box ul:before{
-    background-image: url("../img/ppl_standing_on_asteroid.png");
-    height: 16px;
-} */
 
 a:visited{
     text-decoration: none;
@@ -660,6 +661,10 @@ a:link{
     #junk_1{
         background-image: url("../img/150px/junk_1_150.png");
     }
+
+    #junk_2{
+        background-image: url("../img/150px/junk_2_150.png");
+    }
     
     #factory_1{
         background-image: url("../img/150px/factory_1_150.png");
@@ -672,9 +677,17 @@ a:link{
     #factory_3{
         background-image: url("../img/150px/factory_3_150.png");
     }
+
+    #factory_4{
+        background-image: url("../img/150px/factory_4_150.png");
+    }
     
     #factory_kit_1{
         background-image: url("../img/150px/factory_kit_1_150.png");
+    }
+
+    #factory_kit_2{
+        background-image: url("../img/150px/factory_kit_2_150.png");
     }
     
     #athena{
